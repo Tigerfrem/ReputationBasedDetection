@@ -1,0 +1,4 @@
+
+alert ip any any <> any any (msg:"BAD IP REPUTATION: Low Confidence Alert"; iprep:any,Network_Host,<,50; sid:0001; rev:1;)
+
+alert ip any any <> any any (msg:"BAD IP REPUTATION: High Confidence Alert"; iprep:any,Network_Host,>,50; sid:0002; rev:1;)
